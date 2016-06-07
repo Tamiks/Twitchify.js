@@ -26,6 +26,7 @@ setInterval(function(){
     if(comment[i].innerHTML.indexOf("%spork") != -1){
       emote[i] = new Image();
       emote[i].src = emotesrc[0];
+      emote[i].width = 16;
       comment[i].innerHTML = comment[i].innerHTML.replace("%spork", "");
       comment[i].appendChild(emote[i]);
     }
